@@ -5,9 +5,12 @@ import TransactionButton from '../components/TransactionButton'
 function DataFetching() {
 
     const [posts, setPosts] = useState([]);
-    const [amount, setAmount] = useState(0)
+    const [amount, setAmount] = useState(0);
+    const [wallet, setWallet] = useState({}) 
+
 
     console.log("parent" + amount)
+    console.log("saved" + wallet)
 
     const options = {
         method: 'POST',
@@ -18,7 +21,7 @@ function DataFetching() {
         },
         body: JSON.stringify({referrerAccountId: 'AC_PD7YFA9LEPA', 
                               sourceCurrency: 'SEK',
-                              amount: {amount}
+                              
                             })
       };
 
@@ -31,7 +34,8 @@ function DataFetching() {
         useEffect(() => {
         fetch('https://api.testwyre.com/v3/orders/reserve', options)
             .then(response => response.json())
-            .then(response => console.log(response))
+            .then(response => setWallet(response))
+            
             .catch(err => console.error(err));
         }, [])
 
@@ -40,6 +44,9 @@ function DataFetching() {
         <ul>
          <TransactionButton DataFetching={DataFetching} handleClick={handleClick} amount={amount} setAmount={setAmount}/>
         </ul>
+        <div>
+            {JSON.stringify(wallet.reservation)}
+        </div>
     </div>
   )
 }
