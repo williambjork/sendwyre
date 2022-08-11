@@ -6,6 +6,7 @@ import DataFetching from '../components/DataFetching'
 
 
 
+
 const Home: NextPage = () => {
 
  
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
         <div>
           <DataFetching />
+          
         </div>
       </main>
 
