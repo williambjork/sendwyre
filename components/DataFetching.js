@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import axios from "axios";
 import TransactionButton from "../components/TransactionButton";
 import FetchWallet from "../hooks/FetchWallet";
@@ -7,16 +7,20 @@ function DataFetching() {
   const [posts, setPosts] = useState([]);
   const [amount, setAmount] = useState(0);
 
+  const amountRef = useRef(null);
+
+  //Referencing custom hook
   const wallet = FetchWallet(amount);
 
   console.log("parent" + amount);
   console.log("saved" + wallet);
 
-  const handleClick = () => {
-    console.log("clicked");
-
+  const handleClick = (e) => {
+    e.preventDefault();
+    setAmount(amountRef.current.value);
+    console.log("clicked"); /*
     setAmount((current) => current + num);
-    console.log("parent" + index);
+    console.log("parent" + index); */
   };
 
   return (
@@ -25,20 +29,13 @@ function DataFetching() {
         <TransactionButton
           DataFetching={DataFetching}
           handleClick={handleClick}
-          amount={amount}
+          amount={amountRef}
           setAmount={setAmount}
         />
       </ul>
-      <button
-        type="button"
-        onClick={() => {
-          handleClick;
-        }}
-      >
-        test
-      </button>
+    
       <div>{wallet.url}</div>
-      <div>{wallet.amount}</div>
+      <div>{wallet.amountRef}</div>
     </div>
   );
 }
