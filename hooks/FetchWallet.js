@@ -13,10 +13,13 @@ function FetchWallet(amount) {
       Authorization: "Bearer TEST-SK-6C9AXWAX-YZ976B2W-TGD9B6R2-JD6ACY3P",
     },
     body: JSON.stringify({
-      amount: amount,
-      referrerAccountId: "AC_PD7YFA9LEPA",
-      sourceCurrency: "SEK",
       
+        
+        amount: amount,
+        sourceCurrency: 'SEK',
+        referrerAccountId: 'AC_PD7YFA9LEPA',
+        firstName: 'Super', 
+        lastName: 'Mario'
     }),
   };
 
