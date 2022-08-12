@@ -26,7 +26,7 @@ function FetchWallet(amount) {
       .then((response) => response.json())
       .then((response) => setWallet(response))
       .catch((err) => console.error(err));
-  }, []);
+  }, [amount]);
 
   return wallet;
 }

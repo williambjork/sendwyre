@@ -31,6 +31,7 @@ function DataFetching() {
           DataFetching={DataFetching}
           handleClick={handleClick}
           amount={amount}
+          amountRef={amountRef}
           setAmount={setAmount}
         />
      </ul> 

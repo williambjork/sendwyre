@@ -5,9 +5,8 @@ function TransactionButton(props) {
     <div>
         <form>
       <input
+        ref={props.amountRef}
         type="text"
-        value={props.amount}
-        onChange={(e) => props.setAmount(e.target.value)}
       ></input>
         <button
         
