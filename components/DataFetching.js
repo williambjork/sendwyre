@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import axios from "axios";
 import TransactionButton from "../components/TransactionButton";
 import FetchWallet from "../hooks/FetchWallet";
+import CurrencyDropDown from "../components/CurrencyDropDown";
 
 function DataFetching() {
   const [posts, setPosts] = useState([]);
@@ -25,14 +26,18 @@ function DataFetching() {
 
   return (
     <div>
-      <ul>
+     <ul>
         <TransactionButton
           DataFetching={DataFetching}
           handleClick={handleClick}
-          amount={amountRef}
+          amount={amount}
           setAmount={setAmount}
         />
-      </ul>
+     </ul> 
+
+     {/* } <div>
+        <CurrencyDropDown />
+  </div> */}
     
       <div>{wallet.url}</div>
       <div>{wallet.amountRef}</div>

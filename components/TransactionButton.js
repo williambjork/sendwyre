@@ -1,22 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 
 function TransactionButton(props) {
   return (
     <div>
+        <form>
       <input
         type="text"
-        value={props.amountRef}
+        value={props.amount}
         onChange={(e) => props.setAmount(e.target.value)}
       ></input>
         <button
-        type="button"
-        onClick={() => {
-          props.handleClick;
-        }}
+        
+        onClick={ 
+          props.handleClick
+        }
       >
         Send
       </button>
+      </form>
     </div>
+    
   );
 }
 

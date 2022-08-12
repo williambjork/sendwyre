@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-function FetchWallet(amountRef) {
+function FetchWallet(amount) {
   const [wallet, setWallet] = useState({});
 
 
@@ -13,7 +13,7 @@ function FetchWallet(amountRef) {
       Authorization: "Bearer TEST-SK-6C9AXWAX-YZ976B2W-TGD9B6R2-JD6ACY3P",
     },
     body: JSON.stringify({
-      amount: amountRef,
+      amount: amount,
       referrerAccountId: "AC_PD7YFA9LEPA",
       sourceCurrency: "SEK",
       
