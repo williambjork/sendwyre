@@ -5,13 +5,12 @@ function TransactionButton(props) {
     <div>
         <form>
 
-      <div className="text-lg">
+     {/* <div className="text-lg">
         <p>SEK</p>
         <input
             ref={props.amountRef}
             type="text">
-        </input>
-        
+  </input> 
   </div> 
 
 
@@ -19,7 +18,8 @@ function TransactionButton(props) {
       <input
         ref={props.addressRef}
         type="text"  
-      ></input>
+      ></input> */}
+        
 
        
 
@@ -79,7 +79,7 @@ function TransactionButton(props) {
       </div>
 
       <div>
-        <label for="password" class="text-sm font-medium">Vad är din krypto wallet adress?</label>
+        <label for="password" class="text-sm font-medium">Vad är din krypto plånboksadress?</label>
 
         <div class="relative mt-1">
           <input
