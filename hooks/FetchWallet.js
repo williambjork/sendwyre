@@ -18,8 +18,6 @@ function FetchWallet(amount) {
         amount: amount,
         sourceCurrency: 'SEK',
         referrerAccountId: 'AC_PD7YFA9LEPA',
-        firstName: 'Super', 
-        lastName: 'Mario'
     }),
   };
 

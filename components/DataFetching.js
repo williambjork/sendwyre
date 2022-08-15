@@ -3,6 +3,7 @@ import axios from "axios";
 import TransactionButton from "../components/TransactionButton";
 import FetchWallet from "../hooks/FetchWallet";
 import CurrencyDropDown from "../components/CurrencyDropDown";
+import Router from 'next/router'
 
 function DataFetching() {
   const [posts, setPosts] = useState([]);
@@ -19,6 +20,7 @@ function DataFetching() {
   const handleClick = (e) => {
     e.preventDefault();
     setAmount(amountRef.current.value);
+    Router.push(wallet)
     console.log("clicked"); /*
     setAmount((current) => current + num);
     console.log("parent" + index); */
@@ -40,7 +42,8 @@ function DataFetching() {
         <CurrencyDropDown />
   </div> */}
     
-      <div>{wallet.url}</div>
+      <div><a href={wallet.url}>Transfer</a></div>
+      <div><a href>{wallet.url}</a></div>
       <div>{wallet.amountRef}</div>
     </div>
   );
