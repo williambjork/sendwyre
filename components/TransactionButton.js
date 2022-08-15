@@ -35,31 +35,31 @@ function TransactionButton(props) {
 
       </form>
 
-      <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
-  <div class="max-w-lg mx-auto">
-    <h1 class="text-2xl font-bold text-center text-indigo-600 sm:text-3xl">Köp krypto enkelt!</h1>
+      <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+  <div className="max-w-lg mx-auto">
+    <h1 className="text-2xl font-bold text-center text-indigo-600 sm:text-3xl">Köp krypto enkelt!</h1>
 
     
 
-    <form action="" class="p-8 mt-6 mb-0 space-y-4 rounded-lg shadow-2xl">
-      <p class="text-lg font-medium"></p>
+    <form action="" className="p-8 mt-6 mb-0 space-y-4 rounded-lg shadow-2xl">
+      <p className="text-lg font-medium"></p>
 
       <div>
-        <label for="email" class="text-sm font-medium">Hur mycket vill du köpa?</label>
+        <label for="email" className="text-sm font-medium">Hur mycket vill du köpa?</label>
 
 
 
-        <div class="relative mt-1">
+        <div className="relative mt-1">
           <input
             type="text"
             
-            class="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
+            className="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
             placeholder="SEK"
             ref={props.amountRef}
             
           />
 
-          <span class="absolute inset-y-0 inline-flex items-center right-4">
+          <span className="absolute inset-y-0 inline-flex items-center right-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="w-5 h-5 text-gray-400"
@@ -79,20 +79,20 @@ function TransactionButton(props) {
       </div>
 
       <div>
-        <label for="password" class="text-sm font-medium">Vad är din krypto plånboksadress?</label>
+        <label for="password" className="text-sm font-medium">Vad är din krypto plånboksadress?</label>
 
-        <div class="relative mt-1">
+        <div className="relative mt-1">
           <input
-            type="password"
-            id="password"
+            type="text"
+            ref={props.addressRef}
             class="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
             placeholder="Adress"
           />
 
-          <span class="absolute inset-y-0 inline-flex items-center right-4">
+          <span className="absolute inset-y-0 inline-flex items-center right-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 text-gray-400"
+              className="w-5 h-5 text-gray-400"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -114,12 +114,12 @@ function TransactionButton(props) {
         </div>
       </div>
 
-       <a class="relative inline-block text-sm font-medium text-white group focus:outline-none focus:ring" href="/download">
-  <span class="absolute inset-0 border border-black group-active:border-black"></span>
+       <a className="relative inline-block text-sm font-medium text-white group focus:outline-none focus:ring" href="/download">
+  <span className="absolute inset-0 border border-black group-active:border-black"></span>
   <span onClick={ 
           props.handleClick
         } 
-        class= "block px-12 py-3 transition-transform bg-bgblue-200 border border-black active:border-black active:bg-bgblue-100 group-hover:-translate-x-1 group-hover:-translate-y-1">
+        className= "block px-12 py-3 transition-transform bg-bgblue-200 border border-black active:border-black active:bg-bgblue-100 group-hover:-translate-x-1 group-hover:-translate-y-1">
     Transfer
   </span>
 </a>

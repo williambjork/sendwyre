@@ -30,7 +30,7 @@ function DataFetching() {
   };
 
   return (
-    <div ClassName="grid grid-cols-3 gap-4 border-gray-900">
+    <div>
     <div className="col-span-2">
         <ul>
             <TransactionButton
@@ -49,8 +49,8 @@ function DataFetching() {
         <CurrencyDropDown />
   </div> */}
     
-      <div className=""><a href={wallet.url}>Redirect</a></div>
-      <div><a href>{wallet.url}</a></div>
+      <div className="underline overflow-hidden"><a href={wallet.url}>Redirect</a></div>
+      <div className="text-xs "><a href>{wallet.url}</a></div>
       <div>{wallet.amountRef}</div>
     </div>
   );

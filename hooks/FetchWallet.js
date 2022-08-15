@@ -14,10 +14,11 @@ function FetchWallet(amount, address) {
       Authorization: "Bearer TEST-SK-6C9AXWAX-YZ976B2W-TGD9B6R2-JD6ACY3P",
     },
     body: JSON.stringify({
-        redirectUrl: 'https://www.sendwyre.com/success',
+   /* dest: address, */
+    redirectUrl: 'https://www.sendwyre.com/success',
     autoRedirect: true,
-    
     amount: amount,
+    sourceCurrency: 'SEK',
     referrerAccountId: 'AC_PD7YFA9LEPA'
         
     }),
