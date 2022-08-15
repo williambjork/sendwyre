@@ -49,7 +49,7 @@ function DataFetching() {
         <CurrencyDropDown />
   </div> */}
     
-      <div><a href={wallet.url}>Transfer</a></div>
+      <div className=""><a href={wallet.url}>Redirect</a></div>
       <div><a href>{wallet.url}</a></div>
       <div>{wallet.amountRef}</div>
     </div>

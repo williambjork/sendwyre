@@ -15,8 +15,6 @@ function TransactionButton(props) {
   </div> 
 
 
-      
-
             <p>Wallet Address</p>
       <input
         ref={props.addressRef}
@@ -121,7 +119,7 @@ function TransactionButton(props) {
   <span onClick={ 
           props.handleClick
         } 
-        class= "block px-12 py-3 transition-transform bg-black border border-black active:border-black active:bg-black group-hover:-translate-x-1 group-hover:-translate-y-1">
+        class= "block px-12 py-3 transition-transform bg-bgblue-200 border border-black active:border-black active:bg-bgblue-100 group-hover:-translate-x-1 group-hover:-translate-y-1">
     Transfer
   </span>
 </a>
