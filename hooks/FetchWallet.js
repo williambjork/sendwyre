@@ -15,10 +15,10 @@ function FetchWallet(amount, address) {
     },
     body: JSON.stringify({
         redirectUrl: 'https://www.sendwyre.com/success',
-        autoRedirect: true,
-        dest: address,
-        amount: amount,
-        referrerAccountId: 'AC_PD7YFA9LEPA'
+    autoRedirect: true,
+    
+    amount: amount,
+    referrerAccountId: 'AC_PD7YFA9LEPA'
         
     }),
   };
@@ -35,6 +35,7 @@ function FetchWallet(amount, address) {
     const isMounted = useRef(false);
   useEffect(() => {
     if (isMounted.current === true) {
+        console.log(address)
         fetch("https://api.testwyre.com/v3/orders/reserve", options)
         .then((response) => response.json())
         .then((response) => setWallet(response))

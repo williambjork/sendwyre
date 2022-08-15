@@ -18,9 +18,11 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <div>
+      <main className="flex w-full flex-3 flex-col items-center justify-center px-20 text-center">
+      <div className="relative bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
+    <div className="mx-auto max-w-md">
           <DataFetching />
+          </div>
           
         </div>
       </main>

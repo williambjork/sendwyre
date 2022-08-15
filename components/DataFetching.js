@@ -8,7 +8,7 @@ import Router from 'next/router'
 function DataFetching() {
   const [posts, setPosts] = useState([]);
   const [amount, setAmount] = useState(0);
-  const [address, setAddress] = useState(0);
+  const [address, setAddress] = useState('u');
  
   const isMounted = useRef('true');
 
@@ -30,19 +30,20 @@ function DataFetching() {
   };
 
   return (
-    <div>
-     <ul>
-        <TransactionButton
-          DataFetching={DataFetching}
-          handleClick={handleClick}
-          amount={amount}
-          amountRef={amountRef}
-          setAmount={setAmount}
-          address={address}
-          addressRef={addressRef}
-          
-        />
-     </ul> 
+    <div ClassName="grid grid-cols-3 gap-4 border-gray-900">
+    <div className="col-span-2">
+        <ul>
+            <TransactionButton
+            DataFetching={DataFetching}
+            handleClick={handleClick}
+            amount={amount}
+            amountRef={amountRef}
+            setAmount={setAmount}
+            address={address}
+            addressRef={addressRef}
+            />
+        </ul> 
+     </div>
 
      {/* } <div>
         <CurrencyDropDown />
