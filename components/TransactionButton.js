@@ -34,7 +34,7 @@ function TransactionButton(props) {
     Transfer
   </span>
     </a> */}
-    
+
       </form>
 
       <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
@@ -126,10 +126,7 @@ function TransactionButton(props) {
   </span>
 </a>
 
-      <p class="text-sm text-center text-gray-500">
-        No account?
-        <a class="underline" href="">Sign up</a>
-      </p>
+      
     </form>
   </div>
 </div>
