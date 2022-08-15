@@ -8,22 +8,25 @@ import Router from 'next/router'
 function DataFetching() {
   const [posts, setPosts] = useState([]);
   const [amount, setAmount] = useState(0);
+  const [address, setAddress] = useState(0);
+ 
+  const isMounted = useRef('true');
 
   const amountRef = useRef(null);
+  const addressRef = useRef(null);
 
   //Referencing custom hook
-  const wallet = FetchWallet(amount);
+  const wallet = FetchWallet(amount, address);
 
-  console.log("parent" + amount);
+  console.log("Amount: " + amount);
+  console.log("Address: " + address);
   console.log("saved" + wallet);
 
   const handleClick = (e) => {
     e.preventDefault();
     setAmount(amountRef.current.value);
-    Router.push(wallet)
-    console.log("clicked"); /*
-    setAmount((current) => current + num);
-    console.log("parent" + index); */
+    setAddress(addressRef.current.value)
+    console.log("clicked");
   };
 
   return (
@@ -35,6 +38,9 @@ function DataFetching() {
           amount={amount}
           amountRef={amountRef}
           setAmount={setAmount}
+          address={address}
+          addressRef={addressRef}
+          
         />
      </ul> 
 
