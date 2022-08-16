@@ -14,6 +14,14 @@ const Home: NextPage = () => {
  
 
   return (
+<>
+    <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800&display=swap" rel="stylesheet" />
+    </Head>
+
+    
     <div className="bg-gradient-to-br from-bgblue-100
     to-bgblue-200 flex min-h-screen flex-col items-center justify-center py-2">
       
@@ -30,6 +38,7 @@ const Home: NextPage = () => {
         </div>
       </main>
     </div>
+    </>
   )
 }
 
