@@ -6,8 +6,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        bgdots: 'https://svgsilh.com/svg/1500115.svg'
+      },
       fontFamily: {
-        'montserrat': ['Montserrat Alternates', 'sans-serif']
+        'montserrat': ['Montserrat Alternates', 'sans-serif'],
+        'erica': ['Montserrat Alternates', 'sans-serif']
       },
       colors: {
         bgblue: {
