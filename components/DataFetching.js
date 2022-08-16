@@ -4,6 +4,9 @@ import TransactionButton from "../components/TransactionButton";
 import FetchWallet from "../hooks/FetchWallet";
 import CurrencyDropDown from "../components/CurrencyDropDown";
 import Router from 'next/router'
+import Image from 'next/image'
+import globe from '../src/images/bgearth.svg'
+
 
 function DataFetching() {
   const [posts, setPosts] = useState([]);
@@ -32,6 +35,7 @@ function DataFetching() {
   return (
     <div>
     <div className="col-span-2">
+    <Image src={globe} height={180} width={180}/>
         <ul>
             <TransactionButton
             DataFetching={DataFetching}

@@ -34,8 +34,9 @@ function TransactionButton(props) {
     </a> */}
 
       </form>
+      
 
-      <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+      <div className="max-w-screen-xl px-4 py-5 mx-auto sm:px-6 lg:px-8">
   <div className="max-w-lg mx-auto">
     <h1 className="text-2xl font-bold text-center text-indigo-600 sm:text-3xl">Köp krypto enkelt!</h1>
 
