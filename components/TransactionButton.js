@@ -46,7 +46,7 @@ function TransactionButton(props) {
       <p className="text-lg font-medium"></p>
 
       <div>
-        <label for="email" className="text-sm font-medium">Hur mycket vill du köpa?</label>
+        <label for="email" className="text-lg  font-medium">Hur mycket vill du köpa?</label>
 
 
 
@@ -81,8 +81,8 @@ function TransactionButton(props) {
 
       <div>
 
-        <div className="">
-            <label for="password" className="text-sm font-medium">Vad är din krypto plånboksadress?</label>
+        <div className="pt-3">
+            <label for="password" className="text-lg font-medium ">Vad är din kryptoadress?</label>
         </div>
 
         <div className="relative mt-1">
@@ -123,7 +123,7 @@ function TransactionButton(props) {
          <span onClick={ 
           props.handleClick
         } 
-        className= "block px-12 py-3 transition-transform bg-bgblue-200 border border-black active:border-black active:bg-bgblue-100 group-hover:-translate-x-1 group-hover:-translate-y-1">
+        className= "block px-12 py-3 transition-transform bg-indigo-600 border border-black active:border-black active:bg-bgblue-100 group-hover:-translate-x-1 group-hover:-translate-y-1">
     Transfer
   </span>
 </a>
