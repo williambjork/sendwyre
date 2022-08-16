@@ -38,7 +38,7 @@ function TransactionButton(props) {
 
       <div className="max-w-screen-xl px-4 py-5 mx-auto sm:px-6 lg:px-8">
   <div className="max-w-lg mx-auto">
-    <h1 className="font-montserrat text-2xl font-bold text-center text-indigo-600 sm:text-3xl">Köp krypto enkelt!</h1>
+    <h1 className="font-montserrat text-4xl font-bold text-center text-indigo-600 sm:text-4xl">Köp krypto enkelt!</h1>
 
     
 
@@ -119,8 +119,8 @@ function TransactionButton(props) {
       </div>
 
        <a className="relative inline-block text-sm font-medium text-white group focus:outline-none focus:ring" href="/download">
-  <span className="absolute inset-0 border border-black group-active:border-black"></span>
-  <span onClick={ 
+         <span className="absolute inset-0 border border-black group-active:border-black"></span>
+         <span onClick={ 
           props.handleClick
         } 
         className= "block px-12 py-3 transition-transform bg-bgblue-200 border border-black active:border-black active:bg-bgblue-100 group-hover:-translate-x-1 group-hover:-translate-y-1">
