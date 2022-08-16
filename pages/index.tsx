@@ -26,11 +26,11 @@ const Home: NextPage = () => {
 
     
     <div className="bg-gradient-to-br from-bgblue-100
-    to-bgblue-200 flex min-h-screen flex-col items-center justify-center py-2">
+    to-bgblue-200 flex min-h-screen flex-col items-center justify-center">
       
 
       <main className="
-                   bg-[url(https://i.postimg.cc/6qHr7Qfp/bg-bluegrid.png)] min-h-screen bg-cover flex w-full flex-3 flex-col items-center justify-center px-20 text-center">
+                   bg-[url(https://svgsilh.com/svg/26432.svg)] min-h-screen bg-cover flex w-full flex-3 flex-col items-center justify-center px-20 text-center">
                    {/* <Image src={circledots} height={880} width={880}/> */}
               
               <div className="relative bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
