@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Dropdown from './Dropdown';
 
 
 function TransactionButton(props) {
+
+    const currencies = [
+        { label: 'BTC', value: 'bitcoin:' },
+        { label: 'ETH', value: 'ethereum:' }  
+    ];
+
+    const [ currency, setCurrency ] = useState();
+
+    const handleChange = (e) => {
+        setCurrency(e.target.value);
+    };
+
   return (
     <div>
       <form>
@@ -79,7 +91,7 @@ function TransactionButton(props) {
             </div>
 
             <div>
-                <Dropdown />
+                <Dropdown label="Vilken valuta?" currency={currency} handleChange={handleChange} currencies={currencies}/>
             </div>
 
             <div>

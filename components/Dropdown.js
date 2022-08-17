@@ -1,16 +1,19 @@
 import React from 'react'
+import { urlToHttpOptions } from 'url'
 
-function Dropdown() {
+function Dropdown(props) {
   return (
     <div>
         <label className="text-lg  font-medium">
-            Vilken valuta? <br></br>
-            <select>
-                <option value="bitcoin:">BTC</option>
-                <option value="ethereum:">ETH</option>
+            {props.label} <br></br>
+            <select value={props.currency} onChange={props.handleChange}>
+            {props.currencies.map((option) => (
+          <option value={option.value}>{option.label}</option>
+        ))};
                 
             </select>
         </label>
+        <p>Currency is {props.currency}</p>
     </div>
   )
 }
