@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Dropdown } from '../components/Dropdown';
 
-function FetchWallet(amount, address, currency) {
+function FetchWallet(amount, address, currency, currencyShort) {
   const [wallet, setWallet] = useState({});
 
   // headers etc for API call
@@ -19,6 +19,7 @@ function FetchWallet(amount, address, currency) {
         dest: currency + address,
         autoRedirect: true,
         redirectUrl: 'https://www.sendwyre.com/success',
+        destCurrency: currencyShort
     }),
   };
 

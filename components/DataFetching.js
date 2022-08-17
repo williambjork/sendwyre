@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import axios from "axios";
 import TransactionButton from "../components/TransactionButton";
 import FetchWallet from "../hooks/FetchWallet";
 import CurrencyDropDown from "../components/CurrencyDropDown";
@@ -11,30 +10,46 @@ function DataFetching() {
   
   const [amount, setAmount] = useState(0);
   const [address, setAddress] = useState("u");
-  const [ currency, setCurrency ] = useState();
+  const [ currency, setCurrency ] = useState([]);
+  const [ currencyShort, setCurrencyShort ] = useState('');
 
   const amountRef = useRef(null);
   const addressRef = useRef(null);
   const currencyRef = useRef(null);
 
   //Referencing custom hook
-  const wallet = FetchWallet(amount, address, currency);
+  const wallet = FetchWallet(amount, address, currency, currencyShort);
 
   console.log("Amount: " + amount);
   console.log("Address: " + address);
   console.log("saved" + wallet);
   console.log("currency is: " + currency)
+  console.log("short: " + currencyShort)
 
   const handleClick = (e) => {
     e.preventDefault();
     setAmount(amountRef.current.value);
-    setAddress(addressRef.current.value);
-    console.log("clicked");
+    setAddress(addressRef.current.value);  
   };
 
+   
     const handleCurrencyChange = (e) => {
         setCurrency(e.target.value);
+        if (currency == 'bitcoin:') {
+            setCurrencyShort('ETH');
+        } else if (currency == 'ethereum:') {
+            setCurrencyShort('BTC');
+        }
+        
+        
+        
     };
+
+    const currencies = [
+        { label: 'BTC',  value: 'bitcoin:' },
+        { label: 'ETH', value: 'ethereum:' }  
+    ];
+
 
   return (
     <div>
@@ -50,6 +65,7 @@ function DataFetching() {
             address={address}
             addressRef={addressRef}
             handleCurrencyChange={handleCurrencyChange}
+            currencies={currencies}
           />
         </ul>
       </div>
