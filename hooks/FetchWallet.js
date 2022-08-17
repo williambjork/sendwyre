@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-function FetchWallet(amount, address) {
+function FetchWallet(amount, address, destCurrency) {
   const [wallet, setWallet] = useState({});
 
   // headers etc for API call

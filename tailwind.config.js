@@ -11,7 +11,8 @@ module.exports = {
       },
       fontFamily: {
         'montserrat': ['Montserrat Alternates', 'sans-serif'],
-        'erica': ['Montserrat Alternates', 'sans-serif']
+        'erica': ['Montserrat Alternates', 'sans-serif'],
+        'orbitron': ['Orbitron', 'sans-serif']
       },
       colors: {
         bgblue: {
