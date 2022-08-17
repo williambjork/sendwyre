@@ -6,14 +6,14 @@ function Dropdown(props) {
     <div>
         <label className="text-lg  font-medium">
             {props.label} <br></br>
-            <select value={props.currency} onChange={props.handleChange}>
+            <select value={props.currency} onChange={props.handleCurrencyChange}>
             {props.currencies.map((option) => (
           <option value={option.value}>{option.label}</option>
         ))};
                 
             </select>
         </label>
-        <p>Currency is {props.currency}</p>
+        
     </div>
   )
 }

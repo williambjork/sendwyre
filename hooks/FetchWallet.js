@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
+import { Dropdown } from '../components/Dropdown';
 
-function FetchWallet(amount, address, destCurrency) {
+function FetchWallet(amount, address, currency) {
   const [wallet, setWallet] = useState({});
 
   // headers etc for API call
@@ -15,9 +16,9 @@ function FetchWallet(amount, address, destCurrency) {
         referrerAccountId: 'AC_PD7YFA9LEPA',
         amount: amount,
         sourceCurrency: 'SEK',
-        dest: 'bitcoin:' + address,
+        dest: currency + address,
         autoRedirect: true,
-        redirectUrl: 'https://www.sendwyre.com/success'
+        redirectUrl: 'https://www.sendwyre.com/success',
     }),
   };
 
