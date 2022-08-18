@@ -1,4 +1,5 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { useRouter } from 'next/router'
 import TransactionButton from "../components/TransactionButton";
 import FetchWallet from "../hooks/FetchWallet";
 import CurrencyDropDown from "../components/CurrencyDropDown";
@@ -45,6 +46,15 @@ function DataFetching() {
     { label: "ETH", value: "ethereum:" },
     { label: "DAI", value: "dai:" },
   ];
+
+  // Redirect user when getting API response
+  const router = useRouter();
+
+  useEffect(() => {
+    if (wallet.url != null) {
+    router.push(wallet.url)
+    } else { return }
+  }, [wallet.url])
 
   return (
     <div>
