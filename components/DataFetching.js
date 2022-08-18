@@ -7,11 +7,10 @@ import Image from "next/image";
 import globe from "../src/images/bgearth.svg";
 
 function DataFetching() {
-  
   const [amount, setAmount] = useState(0);
   const [address, setAddress] = useState("u");
-  const [ currency, setCurrency ] = useState([]);
-  const [ currencyShort, setCurrencyShort ] = useState('');
+  const [currency, setCurrency] = useState([]);
+  const [currencyShort, setCurrencyShort] = useState("");
 
   const amountRef = useRef(null);
   const addressRef = useRef(null);
@@ -23,33 +22,29 @@ function DataFetching() {
   console.log("Amount: " + amount);
   console.log("Address: " + address);
   console.log("saved" + wallet);
-  console.log("currency is: " + currency)
-  console.log("short: " + currencyShort)
+  console.log("currency is: " + currency);
+  console.log("short: " + currencyShort);
 
   const handleClick = (e) => {
     e.preventDefault();
     setAmount(amountRef.current.value);
-    setAddress(addressRef.current.value);  
+    setAddress(addressRef.current.value);
   };
 
-   
-    const handleCurrencyChange = (e) => {
-        setCurrency(e.target.value);
-        if (currency == 'bitcoin:') {
-            setCurrencyShort('ETH');
-        } else if (currency == 'ethereum:') {
-            setCurrencyShort('BTC');
-        }
-        
-        
-        
-    };
+  const handleCurrencyChange = (e) => {
+    setCurrency(e.target.value);
+    if (currency == "bitcoin:") {
+      setCurrencyShort("ETH");
+    } else if (currency == "ethereum:") {
+      setCurrencyShort("BTC");
+    }
+  };
 
-    const currencies = [
-        { label: 'BTC',  value: 'bitcoin:' },
-        { label: 'ETH', value: 'ethereum:' }  
-    ];
-
+  const currencies = [
+    { label: "BTC", value: "bitcoin:" },
+    { label: "ETH", value: "ethereum:" },
+    { label: "DAI", value: "dai:" },
+  ];
 
   return (
     <div>
@@ -70,10 +65,7 @@ function DataFetching() {
         </ul>
       </div>
 
-      {/* } <div>
-        <CurrencyDropDown />
-  </div> */}
-<p>Currency is {currency}</p>
+      <p>Currency is {currency}</p>
       <div className="underline overflow-hidden">
         <a href={wallet.url}>Redirect</a>
       </div>

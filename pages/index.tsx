@@ -30,7 +30,7 @@ const Home: NextPage = () => {
       >
         <main
           className="
-                   bg-[url(https://svgsilh.com/svg/1872374.svg)] min-h-screen bg-cover flex w-full flex-3 flex-col items-center justify-center px-20 text-center"
+                   bg-[url(https://i.postimg.cc/nr89xSmc/gridgrid2opac2.png)] min-h-screen bg-cover flex w-full flex-3 flex-col items-center justify-center px-20 text-center"
         >
           {/* <Image src={circledots} height={880} width={880}/> */}
 
