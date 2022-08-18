@@ -139,7 +139,7 @@ function TransactionButton(props) {
                 onClick={props.handleClick}
                 className="block px-12 py-3 transition-transform bg-indigo-600 border border-black active:border-black active:bg-bgblue-100 group-hover:-translate-x-1 group-hover:-translate-y-1"
               >
-                Transfer
+                Köp!
               </span>
             </a>
           </form>
