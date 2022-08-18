@@ -8,7 +8,7 @@ function Dropdown(props) {
             {props.label} <br></br>
             <select value={props.currency} onChange={props.handleCurrencyChange}>
             {props.currencies.map((option) => (
-          <option value={option.value}>{option.label}</option>
+          <option key={props.currencies.id} value={option.value}>{option.label}</option>
         ))};
                 
             </select>

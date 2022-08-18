@@ -34,18 +34,10 @@ function DataFetching() {
 
   const handleCurrencyChange = (e) => {
     setCurrency(e.target.value);
-    if (currency == "bitcoin:") {
-      setCurrencyShort("ETH");
-    } else if (currency == "ethereum:") {
-      setCurrencyShort("BTC");
-    }
+    setCurrencyShort(currencies[1].label);
+   
+      
   };
-
-  const currencies = [
-    { label: "BTC", value: "bitcoin:" },
-    { label: "ETH", value: "ethereum:" },
-    { label: "DAI", value: "dai:" },
-  ];
 
   // Redirect user when getting API response
   const router = useRouter();
@@ -56,6 +48,12 @@ function DataFetching() {
     } else { return }
   }, [wallet.url])
 
+  const currencies = [
+    { id: "1", label: 'BTC', short: 'BTC', value: 'bitcoin:' },
+    { id: "2", label: 'ETH', short: 'ETH', value: 'ethereum:' },
+    { id: "3", label: 'DAI', short: 'DAI', value: 'dai:' }
+];
+  
   return (
     <div>
       <div className="col-span-2">
@@ -71,6 +69,7 @@ function DataFetching() {
             addressRef={addressRef}
             handleCurrencyChange={handleCurrencyChange}
             currencies={currencies}
+            
           />
         </ul>
       </div>

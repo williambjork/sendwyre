@@ -4,11 +4,8 @@ import Dropdown from './Dropdown';
 
 function TransactionButton(props) {
 
-    const currencies = [
-        { label: 'BTC', short: 'BTC', value: 'bitcoin:' },
-        { label: 'ETH', short: 'ETH', value: 'ethereum:' }  
-    ];
-
+    
+    
     
 
   return (
@@ -87,7 +84,7 @@ function TransactionButton(props) {
             </div>
 
             <div>
-                <Dropdown label="Vilken valuta?" currency={props.currency} handleCurrencyChange={props.handleCurrencyChange} currencies={currencies}/>
+                <Dropdown label="Vilken valuta?" currency={props.currency} currencies={props.currencies} handleCurrencyChange={props.handleCurrencyChange} />
             </div>
 
             <div>
