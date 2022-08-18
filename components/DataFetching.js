@@ -83,8 +83,8 @@ function DataFetching() {
       <div className="text-xs ">
         <a href>{wallet.url}</a>
       </div>
-      <div>{wallet.amountRef}</div>
-    </div> */}
+      <div>{wallet.amountRef}</div> */}
+    </div> 
   );
 }
 
