@@ -75,6 +75,7 @@ function DataFetching() {
         </ul>
       </div>
 
+ {/*
       <p>Currency is {currency}</p>
       <div className="underline overflow-hidden">
         <a href={wallet.url}>Redirect</a>
@@ -83,7 +84,7 @@ function DataFetching() {
         <a href>{wallet.url}</a>
       </div>
       <div>{wallet.amountRef}</div>
-    </div>
+    </div> */}
   );
 }
 
