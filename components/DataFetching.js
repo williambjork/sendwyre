@@ -34,7 +34,7 @@ function DataFetching() {
 
   const handleCurrencyChange = (e) => {
     setCurrency(e.target.value);
-    setCurrencyShort(currencies[1].label);
+    setCurrencyShort(e.target.short); 
    
       
   };
@@ -49,9 +49,9 @@ function DataFetching() {
   }, [wallet.url])
 
   const currencies = [
-    { id: "1", label: 'BTC', short: 'BTC', value: 'bitcoin:' },
-    { id: "2", label: 'ETH', short: 'ETH', value: 'ethereum:' },
-    { id: "3", label: 'DAI', short: 'DAI', value: 'dai:' }
+    { id: "1", label: 'BTC',  value: 'bitcoin:' },
+    { id: "2", label: 'ETH',  value: 'ethereum:' },
+    { id: "3", label: 'DAI',  value: 'dai:' }
 ];
   
   return (
