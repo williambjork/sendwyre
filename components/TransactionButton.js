@@ -1,13 +1,7 @@
 import React, { useState } from "react";
-import Dropdown from './Dropdown';
-
+import Dropdown from "./Dropdown";
 
 function TransactionButton(props) {
-
-    
-    
-    
-
   return (
     <div>
       <form>
@@ -50,8 +44,6 @@ function TransactionButton(props) {
             <p className="text-lg font-medium"></p>
 
             <div>
-                
-                
               <label for="email" className="text-lg  font-medium">
                 Hur mycket vill du köpa?
               </label>
@@ -84,7 +76,12 @@ function TransactionButton(props) {
             </div>
 
             <div>
-                <Dropdown label="Vilken valuta?" currency={props.currency} currencies={props.currencies} handleCurrencyChange={props.handleCurrencyChange} />
+              <Dropdown
+                label="Vilken valuta?"
+                currency={props.currency}
+                currencies={props.currencies}
+                handleCurrencyChange={props.handleCurrencyChange}
+              />
             </div>
 
             <div>

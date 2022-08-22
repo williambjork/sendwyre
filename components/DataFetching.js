@@ -9,9 +9,9 @@ import globe from "../src/images/bgearth.svg";
 
 function DataFetching() {
   const [amount, setAmount] = useState(0);
-  const [address, setAddress] = useState("u");
-  const [currency, setCurrency] = useState([]);
-  const [currencyShort, setCurrencyShort] = useState("");
+  const [address, setAddress] = useState("");
+  const [currency, setCurrency] = useState(null);
+  const [currencyShort, setCurrencyShort] = useState(null);
 
   const amountRef = useRef(null);
   const addressRef = useRef(null);
@@ -26,18 +26,29 @@ function DataFetching() {
   console.log("currency is: " + currency);
   console.log("short: " + currencyShort);
 
+
   const handleClick = (e) => {
     e.preventDefault();
     setAmount(amountRef.current.value);
     setAddress(addressRef.current.value);
   };
 
-  const handleCurrencyChange = (e) => {
+   const handleCurrencyChange =  (e) => {
     setCurrency(e.target.value);
-    setCurrencyShort(e.target.short); 
    
-      
   };
+
+  const  handleCurrencyShortChange = () => {
+     if (currency === "ethereum:") {
+        setCurrencyShort("ETH");
+    }
+    else if (currency === "bitcoin:") {
+        setCurrencyShort("BTC"); 
+    }  else if (currency === "dai:") {
+        setCurrencyShort("DAI");
+    } else { return }
+    
+  }
 
   // Redirect user when getting API response
   const router = useRouter();
@@ -69,6 +80,7 @@ function DataFetching() {
             addressRef={addressRef}
             handleCurrencyChange={handleCurrencyChange}
             currencies={currencies}
+            handleCurrencyShortChange={handleCurrencyShortChange}
             
           />
         </ul>
