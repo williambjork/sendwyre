@@ -5,6 +5,7 @@ import axios from "axios";
 import DataFetching from "../components/DataFetching";
 import circledots from "../src/images/circledots.svg";
 import { useSession, signOut } from "next-auth/react";
+import AccountHeader from '../components/AccountHeader'
 
 const Home: NextPage = () => {
   const {data: session, status} = useSession({required: true})
@@ -29,14 +30,7 @@ const Home: NextPage = () => {
       </Head>
 
       <header className="absolute top-5 right-8">
-      <div className="flex cursor-pointer items-center space-x-3 rounded-full bg-black p-1 pr-2 text-white opacity-90 hover:opacity-80">
-          <img
-            className="h-10 w-10 rounded-full"
-            src={session?.user.image}
-            alt=""/>
-          <h2>{session?.user.name}</h2>
-          
-        </div>
+        <AccountHeader session={session} />
       </header>
 
       <div
