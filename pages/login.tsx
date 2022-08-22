@@ -6,8 +6,12 @@ import DataFetching from "../components/DataFetching";
 import circledots from "../src/images/circledots.svg";
 import Loginbox from '../components/loginbox'
 import globe from "../src/images/bgearth.svg";
+import AccountHeader from "../components/AccountHeader";
+import { useSession, signOut } from "next-auth/react";
 
 function Login() {
+    const {data: session, status} = useSession({required: true})
+
   return (
     <>
       <Head>
@@ -25,6 +29,10 @@ function Login() {
         />
         
       </Head>
+
+      <header className="absolute top-5 right-8">
+        <AccountHeader session={session}/>
+      </header>
 
       <div
         className="bg-gradient-to-br from-bgblue-100

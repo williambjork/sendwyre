@@ -30,7 +30,7 @@ const Home: NextPage = () => {
       </Head>
 
       <header className="absolute top-5 right-8">
-        <AccountHeader session={session} />
+        <AccountHeader session={session}/>
       </header>
 
       <div
