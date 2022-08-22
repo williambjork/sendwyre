@@ -10,6 +10,7 @@ function Loginbox() {
         return (
             <div>
                 <p>Welcome, {session.user.email}</p>
+                <img src={session.user.image} alt="user image" />
                 <button onClick={() => signOut()}>Sign out</button>
             </div>
           )
