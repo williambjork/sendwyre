@@ -5,12 +5,24 @@ function LegalLinks() {
 
     const router = useRouter();
 
+    function handleOmossClick() {
+        router.push("/omoss")
+    }
+
+    function handleTosClick() {
+        router.push("/tos")
+    }
+
+    function handlePrivacyClick() {
+        router.push("/privacy")
+    }
+
   return (
 
     <div className="absolute bottom-5 right-8 text-white">
-        <a  className="pr-3 hover:opacity-80">Om oss</a>
-        <a className="pr-3 hover:opacity-80">Terms of Service</a>
-        <a className="hover:opacity-80">Privacy Policy</a>
+        <a onClick={handleOmossClick} className="pr-3 hover:opacity-80">Om oss</a>
+        <a onClick={handleTosClick}  className="pr-3 hover:opacity-80">Terms of Service</a>
+        <a onClick={handlePrivacyClick} className="hover:opacity-80">Privacy Policy</a>
     </div>
 
   )
