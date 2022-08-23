@@ -37,7 +37,9 @@ function account() {
         className="
                    bg-[url(https://i.postimg.cc/nr89xSmc/gridgrid2opac2.png)] min-h-screen bg-cover flex w-full flex-3 flex-col items-center justify-center px-20 text-center"
       >
-        <div className="relative block items-center p-10 border border-gray-100 shadow-xl bg-white rounded-xl">
+        <div className="relative block items-center p-10 border border-gray-100 shadow-xl rounded-xl
+                        bg-gradient-to-b from-white
+                        to-slate-100 ">
           <img
             className="h-30 w-30 content-center rounded-full top-3 "
             src={session?.user?.image!}
@@ -61,7 +63,7 @@ function account() {
       <footer>
         <LegalLinks />
       </footer>
-      
+
     </div>
   );
 }

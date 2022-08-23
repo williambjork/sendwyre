@@ -14,8 +14,10 @@ function handleClick() {
 }
     
   return (
-    <div onClick={handleClick} className="flex cursor-pointer items-center space-x-3 rounded-full bg-white p-1 pr-2 
-                                        text-black font-medium opacity-100 hover:bg-slate-200">
+    <div onClick={handleClick} className="flex cursor-pointer items-center space-x-3 rounded-full 
+                                            bg-gradient-to-b from-white
+                                          to-slate-200 p-1 pr-2 
+                                          text-black font-medium opacity-100 hover:bg-slate-200">
           <img
             className="h-10 w-10 rounded-full"
             src={props.session?.user.image}
