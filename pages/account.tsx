@@ -2,6 +2,7 @@ import React from "react";
 import { useSession, signOut } from "next-auth/react";
 import AccountHeader from "../components/AccountHeader";
 import { useRouter } from "next/router";
+import LegalLinks from "../components/LegalLinks";
 
 function account() {
   const { data: session, status } = useSession({ required: true });
@@ -56,6 +57,11 @@ function account() {
           <button onClick={() => signOut()}>Sign out</button>
         </div>
       </main>
+
+      <footer>
+        <LegalLinks />
+      </footer>
+      
     </div>
   );
 }

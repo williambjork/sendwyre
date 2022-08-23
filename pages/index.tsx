@@ -6,6 +6,7 @@ import DataFetching from "../components/DataFetching";
 import circledots from "../src/images/circledots.svg";
 import { useSession, signOut } from "next-auth/react";
 import AccountHeader from '../components/AccountHeader'
+import LegalLinks from '../components/LegalLinks'
 
 const Home = () => {
   const {data: session, status} = useSession({required: true})
@@ -49,6 +50,10 @@ const Home = () => {
             </div>
           </div>
         </main>
+
+        <footer>
+          <LegalLinks  />
+        </footer>
       </div>
     </>
   ); 
