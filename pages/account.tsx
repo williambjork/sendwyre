@@ -1,17 +1,13 @@
 import React from "react";
 import { useSession, signOut } from "next-auth/react";
 import AccountHeader from "../components/AccountHeader";
-import { useRouter } from "next/router";
+import BackArrow from "../components/BackArrow";
 import LegalLinks from "../components/LegalLinks";
 
 function account() {
   const { data: session, status } = useSession({ required: true });
 
-  const router = useRouter();
-
-  const handleClick = () => {
-    router.push('/')
-  }
+  
 
 
   return (
@@ -25,14 +21,10 @@ function account() {
             <AccountHeader session={session} />
         </div>
         
-        <div onClick={handleClick} className="absolute top-5 left-8 hover:opacity-80">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 stroke-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={4}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-            </svg>
-        </div>
+        <BackArrow />
         
-
       </header>
+
       <main
         className="
                    bg-[url(https://i.postimg.cc/nr89xSmc/gridgrid2opac2.png)] min-h-screen bg-cover flex w-full flex-3 flex-col items-center justify-center px-20 text-center"
