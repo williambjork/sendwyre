@@ -21,7 +21,9 @@ module.exports = {
         },
         bgred: '#fffbd5',
         bgtan: '#b20a2c',
-        
+        bgviolet: '#747FE5',  
+        bgyellow: '#FFBE11',
+        yellowtwo: '#D59B00'
       }
     },
   },
