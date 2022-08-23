@@ -7,7 +7,7 @@ import circledots from "../src/images/circledots.svg";
 import { useSession, signOut } from "next-auth/react";
 import AccountHeader from '../components/AccountHeader'
 
-const Home: JSX.Element = () => {
+const Home = () => {
   const {data: session, status} = useSession({required: true})
 
   if (session) {
