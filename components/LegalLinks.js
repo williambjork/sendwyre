@@ -1,6 +1,10 @@
 import React from 'react'
+import { useRouter } from "next/router"
 
 function LegalLinks() {
+
+    const router = useRouter();
+
   return (
 
     <div className="absolute bottom-5 right-8 text-white">
