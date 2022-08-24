@@ -62,7 +62,6 @@ function TransactionButton(props) {
                     className="w-5 h-5 stroke-slate-400 text-gray-400"
                     fill="none"
                     viewBox="0 0 24 24"
-                    
                   >
                     <path
                       stroke-linecap="round"
@@ -81,9 +80,9 @@ function TransactionButton(props) {
                 currencies={props.currencies}
                 handleCurrencyChange={props.handleCurrencyChange}
               />
-            </div>
+            </div> 
 
-            <div>
+           <div>
               <div className="pt-3">
                 <label for="password" className="text-lg font-medium ">
                   Vad är din kryptoadress?
@@ -104,27 +103,25 @@ function TransactionButton(props) {
                     className="w-5 h-5 stroke-slate-400 text-gray-400"
                     fill="none"
                     viewBox="0 0 24 24"
-                    
                   >
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
                     />
                   </svg>
                 </span>
               </div>
-            </div>
+            </div> 
 
             <a
               className="relative inline-block text-sm font-medium text-white group focus:outline-none focus:ring"
               href="/download"
             >
-              <span className="absolute inset-0 border border-yellowtwo group-active:border-bgyellow"></span>
+              <span className="absolute inset-0 border border-indigo-600 group-active:border-indigo-600"></span>
               <span
                 onClick={props.handleClick}
-                className="block px-12 py-3 transition-transform bg-bgyellow border border-bgyellow active:border-bgyellow active:bg-indigo-600 group-hover:-translate-x-1 group-hover:-translate-y-1"
+                className="block px-12 py-3 transition-transform bg-indigo-600 border border-indigo-600 active:border-bgyellow active:bg-indigo-600 group-hover:-translate-x-1 group-hover:-translate-y-1"
               >
                 Köp!
               </span>
