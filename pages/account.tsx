@@ -35,7 +35,7 @@ function account() {
 
           
             <img
-              className="h-30 w-30 ml-6 rounded-full  "
+              className="h-30 w-30 inline rounded-full "
               src={session?.user?.image!}
               alt=""
             />
@@ -50,7 +50,7 @@ function account() {
             </p>
           </div>
 
-          <div className="pt-3">
+          <div className="pt-4">
             <button className="hover:underline font-bold" onClick={() => signOut()}>Sign out</button>
           </div>
         </div>
