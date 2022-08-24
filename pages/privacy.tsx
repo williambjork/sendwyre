@@ -3,9 +3,15 @@ import LegalLinks from "../components/LegalLinks";
 import AccountHeader from "../components/AccountHeader";
 import BackArrow from "../components/BackArrow";
 import { useSession } from "next-auth/react";
+import { useRouter } from "next/router";
 
 function Privacy() {
   const { data: session, status } = useSession({ required: true });
+  const router = useRouter();
+
+  function handleClick() {
+    router.push("/");
+  }
 
   return (
     <div
@@ -21,6 +27,7 @@ function Privacy() {
       </header>
 
       <main
+        onClick={handleClick}
         className="
                    bg-[url(https://i.postimg.cc/nr89xSmc/gridgrid2opac2.png)] min-h-screen bg-cover flex w-full flex-3 flex-col items-center justify-center px-20 text-center"
       >

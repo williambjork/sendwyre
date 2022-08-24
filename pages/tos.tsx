@@ -31,12 +31,12 @@ function Tos() {
         className="
                    bg-[url(https://i.postimg.cc/nr89xSmc/gridgrid2opac2.png)] min-h-screen bg-cover flex w-full flex-3 flex-col items-center justify-center px-20 text-center"
       >
-        <a className="relative block overflow-scroll  h-2/6 max-w-4xl p-8 mt-9 mb-9 border bg-white border-gray-100 shadow-xl rounded-xl">
+        <a className="relative block    p-8 mt-9 mb-9 border bg-white border-gray-100 shadow-xl rounded-xl">
           <h5 className="mt-4 text-xl font-bold text-gray-900">
             Terms of service
           </h5>
 
-          <p className="hidden mt-2 text-sm sm:block">
+          <p className="hidden mt-2 text-sm sm:block  ">
             You can manage phone, email and chat conversations all from a single
             mailbox. You can manage phone, email and chat conversations all from
             a single mailbox.You can manage phone, email and chat conversations
