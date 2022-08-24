@@ -27,28 +27,32 @@ function account() {
 
       <main
         className="
-                   bg-[url(https://i.postimg.cc/nr89xSmc/gridgrid2opac2.png)] min-h-screen bg-cover flex w-full flex-3 flex-col items-center justify-center px-20 text-center"
+                   bg-[url(https://i.postimg.cc/nr89xSmc/gridgrid2opac2.png)] min-h-screen bg-cover flex w-full flex-3 flex-col items-center justify-center px-10 text-center"
       >
-        <div className="relative block items-center p-10 border border-gray-100 shadow-xl rounded-xl
+        <div className="relative block  p-10 border border-gray-100 shadow-xl rounded-xl
                         bg-gradient-to-b from-white
                         to-slate-100 ">
-          <img
-            className="h-30 w-30 content-center rounded-full top-3 "
-            src={session?.user?.image!}
-            alt=""
-          />
 
-          <div className="mt-4 text-gray-500 sm:pr-8 pt-10">
-            <h5 className="mt-4 text-xl font-bold text-gray-900">
-              {session?.user?.name}
+          
+            <img
+              className="h-30 w-30 ml-6 rounded-full  "
+              src={session?.user?.image!}
+              alt=""
+            />
+          
+          <div className=" text-gray-500  ">
+            <h5 className="mt-4 text-xl  font-bold text-gray-900">
+             <p> {session?.user?.name} </p>
             </h5>
 
-            <p className="hidden mt-2 text-sm sm:block">
+            <p className="hidden mt-2 items-center text-sm sm:block">
               {session?.user?.email}
             </p>
           </div>
 
-          <button onClick={() => signOut()}>Sign out</button>
+          <div className="pt-3">
+            <button className="hover:underline font-bold" onClick={() => signOut()}>Sign out</button>
+          </div>
         </div>
       </main>
 

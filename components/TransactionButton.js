@@ -118,10 +118,10 @@ function TransactionButton(props) {
               className="relative inline-block text-sm font-medium text-white group focus:outline-none focus:ring"
               href="/download"
             >
-              <span className="absolute inset-0 border border-indigo-600 group-active:border-indigo-600"></span>
+              <span className="absolute inset-0 border rounded-lg border-indigo-600 group-active:border-indigo-600"></span>
               <span
                 onClick={props.handleClick}
-                className="block px-12 py-3 transition-transform bg-indigo-600 border border-indigo-600 active:border-bgyellow active:bg-indigo-600 group-hover:-translate-x-1 group-hover:-translate-y-1"
+                className="block px-12 py-3 rounded-lg transition-transform bg-indigo-600 border border-indigo-600 active:border-bgyellow active:bg-indigo-600 group-hover:-translate-x-1 group-hover:-translate-y-1"
               >
                 Köp!
               </span>
