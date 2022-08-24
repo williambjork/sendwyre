@@ -68,7 +68,7 @@ function DataFetching() {
   return (
     <div>
       <div className="col-span-2">
-        <Image src={globe} height={180} width={180} />
+        <Image src={globe} height={160} width={160} />
         <ul>
           <TransactionButton
             DataFetching={DataFetching}

@@ -19,7 +19,7 @@ function handleClick() {
                                           to-slate-200 p-1 pr-2 
                                           text-black font-medium opacity-100 hover:bg-slate-200">
           <img
-            className="h-10 w-10 rounded-full"
+            className="h-9 w-9 rounded-full"
             src={props.session?.user.image}
             alt=""/>
           <h2 className="pr-2">{props.session?.user.name}</h2>
