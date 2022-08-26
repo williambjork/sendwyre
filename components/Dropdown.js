@@ -4,7 +4,7 @@ import React from 'react'
 function Dropdown(props) {
   return (
     <div>
-        <label className="text-lg  font-medium">
+        <label className="text-lg text-black font-medium">
             {props.label} <br></br>
             <select value={props.currency} onChange={props.handleCurrencyChange}>
             {props.currencies.map((option) => (

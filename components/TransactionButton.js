@@ -44,7 +44,7 @@ function TransactionButton(props) {
             <p className="text-lg font-medium"></p>
 
             <div>
-              <label for="email" className="text-lg  font-medium">
+              <label for="email" className="text-lg text-black font-medium">
                 Hur mycket vill du köpa?
               </label>
 
@@ -84,7 +84,7 @@ function TransactionButton(props) {
 
            <div>
               <div className="pt-3">
-                <label for="password" className="text-lg font-medium ">
+                <label for="password" className="text-lg text-black font-medium ">
                   Vad är din kryptoadress?
                 </label>
               </div>

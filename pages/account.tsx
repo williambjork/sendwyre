@@ -51,7 +51,7 @@ function account() {
           </div>
 
           <div className="pt-4">
-            <button className="hover:underline font-bold" onClick={() => signOut()}>Sign out</button>
+            <button className="hover:underline text-black font-bold" onClick={() => signOut()}>Sign out</button>
           </div>
         </div>
       </main>
