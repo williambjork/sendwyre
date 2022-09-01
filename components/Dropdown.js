@@ -3,6 +3,7 @@ import React from 'react'
 
 function Dropdown(props) {
   return (
+    <>
     <div>
         <label className="text-lg text-black font-medium">
             {props.label} <br></br>
@@ -15,6 +16,8 @@ function Dropdown(props) {
         </label>
         
     </div>
+
+</>
   )
 }
 
