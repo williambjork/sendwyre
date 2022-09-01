@@ -19,7 +19,7 @@ function FetchWallet(amount, address, currency, currencyShort) {
         dest: currency + address,
         autoRedirect: true,
         redirectUrl: 'https://www.sendwyre.com/success',
-        
+        destCurrency: 'BTC'
     }),
   };
 
