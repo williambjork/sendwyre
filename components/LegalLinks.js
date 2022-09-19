@@ -21,8 +21,8 @@ function LegalLinks() {
 
     <div className="absolute text-sm bottom-5 right-8 text-white">
        {/* <a onClick={handleOmossClick} className="pr-3 hover:opacity-80">Om oss</a> */}
-        <a onClick={handleTosClick}  className="pr-3 hover:opacity-80">Terms of Service</a>
-        <a onClick={handlePrivacyClick} className="hover:opacity-80">Privacy Policy</a>
+        <a onClick={handleTosClick}  className="pr-3 hover:opacity-80 cursor-pointer">Terms of Service</a>
+        <a onClick={handlePrivacyClick} className="hover:opacity-80 cursor-pointer">Privacy Policy</a>
     </div>
 
   )

@@ -34,7 +34,7 @@ function TransactionButton(props) {
       <div className="max-w-screen-xl px-5 py-3 mx-auto sm:px-6 lg:px-8">
         <div className="max-w-lg mx-auto">
           <h1 className="font-montserrat text-xl font-bold text-center text-indigo-600 sm:text-4xl">
-            Köp krypto enkelt!
+            Buy Crypto easily!
           </h1>
 
           <form
@@ -45,7 +45,7 @@ function TransactionButton(props) {
 
             <div>
               <label for="email" className="text-lg text-black font-medium">
-                Hur mycket vill du köpa?
+                How much do you want to buy?
               </label>
 
               <div className="relative mt-1">
@@ -85,7 +85,7 @@ function TransactionButton(props) {
            <div>
               <div className="pt-3">
                 <label for="password" className="text-lg text-black font-medium ">
-                  Vad är din kryptoadress?
+                  What is your wallet adress?
                 </label>
               </div>
 

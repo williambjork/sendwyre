@@ -10,16 +10,16 @@ function FetchWallet(amount, address, currency, currencyShort) {
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
-      Authorization: "Bearer TEST-SK-6C9AXWAX-YZ976B2W-TGD9B6R2-JD6ACY3P",
+      Authorization: "Bearer TEST-AK-CX2DQ2HN-ZMUGHH7U-UMZ9A7HH-BL8VMYJQ",
     },
     body: JSON.stringify({
         referrerAccountId: 'AC_PD7YFA9LEPA',
         amount: amount,
         sourceCurrency: 'SEK',
         dest: currency + address,
-        autoRedirect: true,
+        autoRedirect: false,
         redirectUrl: 'https://www.sendwyre.com/success',
-        destCurrency: 'BTC'
+        
     }),
   };
 

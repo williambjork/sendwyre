@@ -10,8 +10,8 @@ import globe from "../src/images/bgearth.svg";
 function DataFetching() {
   const [amount, setAmount] = useState(0);
   const [address, setAddress] = useState("");
-  const [currency, setCurrency] = useState(null);
-  const [currencyShort, setCurrencyShort] = useState(null);
+  const [currency, setCurrency] = useState("bitcoin");
+  const [currencyShort, setCurrencyShort] = useState("BTC");
 
   const amountRef = useRef(null);
   const addressRef = useRef(null);
