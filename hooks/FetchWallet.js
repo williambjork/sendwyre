@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Dropdown } from '../components/Dropdown';
 
-function FetchWallet(amount, address, currency, currencyShort) {
+async function FetchWallet(amount, address, currency, currencyShort) {
   const [wallet, setWallet] = useState({});
 
   // headers etc for API call
@@ -10,14 +10,14 @@ function FetchWallet(amount, address, currency, currencyShort) {
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
-      Authorization: "Bearer TEST-AK-CX2DQ2HN-ZMUGHH7U-UMZ9A7HH-BL8VMYJQ",
+      Authorization: "Bearer TEST-AK-83HRXRMX-VAG6J26W-JQQG3HLG-G4EDG894",
     },
     body: JSON.stringify({
         referrerAccountId: 'AC_PD7YFA9LEPA',
         amount: amount,
         sourceCurrency: 'SEK',
         dest: currency + address,
-        autoRedirect: false,
+        autoRedirect: true,
         redirectUrl: 'https://www.sendwyre.com/success',
         
     }),

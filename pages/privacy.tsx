@@ -35,33 +35,7 @@ function Privacy() {
           <h5 className=" text-xl font-bold text-gray-900">Privacy Policy</h5>
 
           <p className="hidden mt-2 text-sm sm:block">
-            You can manage phone, email and chat conversations all from a single
-            mailbox. You can manage phone, email and chat conversations all from
-            a single mailbox.You can manage phone, email and chat conversations
-            all from a single mailbox.You can manage phone, email and chat
-            conversations all from a single mailbox.You can manage phone, email
-            and chat conversations all from a single mailbox.You can manage
-            phone, email and chat conversations all from a single mailbox.You
-            can manage phone, email and chat conversations all from a single
-            mailbox.You can manage phone, email and chat conversations all from
-            a single mailbox.You can manage phone, email and chat conversations
-            all from a single mailbox.You can manage phone, email and chat
-            conversations all from a single mailbox.You can manage phone, email
-            and chat conversations all from a single mailbox.You can manage
-            phone, <br /> <br /> email and chat conversations all from a single
-            mailbox.You can manage phone, email and chat conversations all from
-            a single mailbox.You can manage phone, email and chat conversations
-            all from a single mailbox.You can manage phone, email and chat
-            conversations all from a single mailbox.You can manage phone, email
-            and chat conversations all from a single mailbox.You can manage
-            phone, email and chat conversations all from a single mailbox.You
-            can manage phone, email and chat conversations all from a single
-            mailbox.You can manage phone, email and chat conversations all from
-            a single mailbox.You can manage phone, email and chat conversations
-            all from a single mailbox.You can manage phone, email and chat
-            conversations all from a single mailbox.You can manage phone, email
-            and chat conversations all from a single mailbox.You can manage
-            phone, email and chat conversations all from a single mailbox.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptatibus earum repellendus, sed debitis architecto saepe, esse neque aliquid magnam quae, doloribus illo! A recusandae, unde nobis hic voluptate ipsa.
           </p>
 
           <h5 className="mt-4 text-xl font-bold text-gray-900">Bajs</h5>
